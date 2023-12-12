@@ -1,0 +1,120 @@
+.header {
+    box-sizing: border-box;
+    padding-left: calc(15px + (208 - 15) * ((100vw - 360px) / (1920 - 360)));
+    padding-right: calc(15px + (208 - 15) * ((100vw - 360px) / (1920 - 360)));
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 101px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.header__logo img {
+    width: 199px;
+    max-height: 51px;
+}
+
+.header__logo a {
+    margin-left: 25px;
+    color: #E5C97B;
+    line-height: 130%;
+    max-width: 200px;
+
+}
+
+.header__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 74px;
+}
+
+.header__email {
+    line-height: 140%;
+}
+
+.header__info label {
+    color: #767676;
+    
+}
+
+.header__social {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header__social li a img:hover{
+    filter: brightness(1.5);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.header__phone-number {
+    display: grid;
+    justify-items: end;
+    font-family: Oranienbaum;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 1px;
+    gap: 8px;
+}
+
+.header__phone-number a {
+    text-decoration: none;
+    color: #F0D683;
+    font-size: 14px;
+    line-height: 130%;
+    text-decoration: underline dotted;
+}
+
+/* -------------Брейкпоинты header-------*/
+
+@media (max-width: 1600px) {
+    .header__logo img {
+        max-width: 155px;
+        max-height: 35px;
+    }
+
+    .header__info {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header__container {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        margin: 10px 0;
+    }
+
+    .header__logo a {
+        max-width: 80%;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 670px) {
+    .header__info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header__phone-number {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        font-size: 16px;
+        gap:0;
+    }
+
+}

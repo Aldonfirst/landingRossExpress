@@ -1,0 +1,63 @@
+/*Анимация девушки на китайском кресле*/
+@keyframes moveInDirections {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    20% {
+        transform: translate(5px, 0);
+    }
+
+    40% {
+        transform: translate(-5px, 0);
+    }
+
+    60% {
+        transform: translate(0, 5px);
+    }
+
+    80% {
+        transform: translate(-5px, 0px);
+    }
+}
+
+.section-three__image img {
+    max-width: 100%;
+    display: block;
+    animation: moveInDirections 5s infinite alternate;
+}
+
+.three__container ul li i::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #17868D;
+    border-radius: 50%;
+    animation: blink 1s infinite;
+    fill: #17868D;
+    filter: drop-shadow(0px 0px 20px rgba(32, 204, 215, 0.50));
+}
+/*Мигание маркеров в третьей секции*/
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.8;
+
+    }
+
+    50% {
+        opacity: 1.4;
+    }
+
+    75% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
