@@ -170,6 +170,16 @@
 
     }
 
+    .section-three__title {
+        font-size: 30px;
+    }
+
+    .section-three__subtitle {
+        font-size: 20px;
+        text-transform: uppercase;
+
+    }
+
     .section-three__item-img {
         padding: 10px 120px;
     }

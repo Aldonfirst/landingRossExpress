@@ -52,6 +52,7 @@
     background: linear-gradient(180deg, #062B2E 0%, #17868D 50.52%, #17868D 100%);
     cursor: pointer;
 }
+
 .section-first__video-button:hover {
     background: linear-gradient(180deg, #17868D 15%, #062B2E 60.22%, #17868D 100%);
     color: #000;
@@ -108,8 +109,9 @@
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-.section-first__reservation-button span:hover{
-    background: linear-gradient(60deg, #F0D683,#9F734C);
+
+.section-first__reservation-button span:hover {
+    background: linear-gradient(60deg, #F0D683, #9F734C);
     opacity: 1.2;
 }
 
@@ -144,7 +146,7 @@
     max-width: 100%;
     height: auto;
     transform: translateY(-50%);
-   
+
 }
 
 
@@ -161,21 +163,26 @@
 }
 
 @media (max-width: 670px) {
+    .section-first {
+        padding-top: 30px;
+    }
+
     .section-first__sofa {
         transform: translateY(-120%);
         padding: 0;
     }
 
     .section-first__title {
-        font-size: 24px;
+        font-size: 36px;
         padding-bottom: 20px;
     }
 
     .section-first__subtitle {
         font-size: 20px;
     }
+
     .section-first__reservation-arrow {
         display: none;
-        
-        }
+
+    }
 }

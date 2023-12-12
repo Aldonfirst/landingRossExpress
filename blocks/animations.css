@@ -28,7 +28,7 @@
     animation: moveInDirections 5s infinite alternate;
 }
 
-.three__container ul li i::before {
+.section-three__container ul li i::before {
     content: '';
     width: 10px;
     height: 10px;
